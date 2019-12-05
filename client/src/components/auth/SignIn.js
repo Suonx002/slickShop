@@ -76,7 +76,7 @@ const SignIn = props => {
           </div>
 
           <button type='submit' className='ui blue fluid button'>
-            Sign Up
+            Login
           </button>
           <div className='content' style={{ marginTop: '1rem' }}>
             Don't have an account ?{' '}
