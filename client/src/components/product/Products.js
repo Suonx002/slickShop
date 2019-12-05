@@ -11,7 +11,6 @@ const Products = () => {
 
   useEffect(() => {
     getProducts();
-    console.log(getProducts());
     //eslint-disable-next-line
   }, []);
 
@@ -54,13 +53,3 @@ const Products = () => {
 };
 
 export default Products;
-
-// {
-//   products.map(product => (
-//     <div
-//       className='sixteen wide mobile five wide tablet four wide computer column'
-//       key={product.id}>
-//       <ProductItem product={product} />
-//     </div>
-//   ));
-// }
