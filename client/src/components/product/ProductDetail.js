@@ -12,7 +12,8 @@ const ProductDetail = props => {
   useEffect(() => {
     clearProducts();
     getOneProduct(props.match.params.id);
-  }, [clearProducts, getOneProduct, props.match.params]);
+    //eslint-disable-next-line
+  }, []);
 
   return (
     <div className='ui container ' style={{ marginTop: '4rem' }}>
