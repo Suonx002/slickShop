@@ -1,5 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Typed from 'react-typed';
 
 import AuthContext from '../../context/auth/authContext';
 import AlertContext from '../../context/alert/alertContext';
@@ -45,6 +46,15 @@ const SignIn = props => {
     }
   };
 
+  const demoLogin = e => {
+    if (email === '' && password === '') {
+      setUser({
+        email: 'vuthy1@gmail.com',
+        password: '123123'
+      });
+    }
+  };
+
   return (
     <div className='ui container '>
       <h3
@@ -83,6 +93,16 @@ const SignIn = props => {
             <Link to='/signup' className='item'>
               Sign Up
             </Link>
+          </div>
+
+          <div className='content' style={{ marginTop: '3rem' }}>
+            <p style={{ textAlign: 'center' }}>-or-</p>
+            <button
+              type='submit'
+              onClick={demoLogin}
+              className='ui blue fluid button'>
+              Login As Demo User
+            </button>
           </div>
         </form>
       </div>

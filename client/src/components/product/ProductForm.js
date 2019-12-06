@@ -82,6 +82,11 @@ const ProductForm = props => {
     }
   };
 
+  const onClear = () => {
+    clearAll();
+    props.history.push('/');
+  };
+
   return (
     <div className='ui container '>
       <h3
@@ -165,8 +170,8 @@ const ProductForm = props => {
             <button
               className='ui fluid yellow button'
               style={{ marginTop: '1rem' }}
-              onClick={clearAll}>
-              Clear
+              onClick={onClear}>
+              Cancel
             </button>
           )}
         </form>
@@ -176,14 +181,3 @@ const ProductForm = props => {
 };
 
 export default ProductForm;
-
-// id: uuid(),
-// imageUrl:
-//   'https://static.slickdealscdn.com/attachment/3/5/9/4/0/2/8/8682461.attach',
-// title: 'Netgear Nighthawk AC2400',
-// description:
-//   'Staples.com has Netgear Nighthawk AC2400 Dual Band Wireless Router .',
-
-// originalPrice: 200,
-// discountPrice: 70,
-// brand: 'Staples'

@@ -46,6 +46,7 @@ const Navbar = () => {
       <Link to='/' className='item '>
         slickShop
       </Link>
+
       <div className='right menu'>
         {isAuthenticated ? authLinks : guestLinks}
       </div>

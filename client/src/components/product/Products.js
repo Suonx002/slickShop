@@ -39,7 +39,7 @@ const Products = () => {
               ))
             : products.map(product => (
                 <div
-                  className='sixteen wide mobile five wide tablet four wide computer column'
+                  className='sixteen wide mobile eight wide tablet four wide computer column'
                   key={product._id}>
                   <ProductItem product={product} />
                 </div>
