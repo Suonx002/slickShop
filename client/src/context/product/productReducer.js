@@ -28,8 +28,8 @@ export default (state, action) => {
       };
     case ADD_PRODUCT:
       return {
-        ...state,
         products: [action.payload, ...state.products],
+        ...state,
         loading: false
       };
     case UPDATE_PRODUCT:

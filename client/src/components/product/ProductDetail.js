@@ -23,7 +23,7 @@ const ProductDetail = props => {
             <div className='fourteen wide mobile eight six tablet eight wide computer column centered '>
               <h2 className='ui header center aligned'>{p.title}</h2>
               <h4 className='ui sub header center aligned'>{p.brand}</h4>
-              <h5 className='ui sub header center aligned'>{p.description}</h5>
+              <p style={{ marginTop: '1rem' }}>{p.description}</p>
             </div>
             <div className='fourteen wide mobile eight six tablet eight wide computer column centered'>
               <div className='ui card centered '>

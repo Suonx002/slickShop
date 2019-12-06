@@ -1,6 +1,5 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Typed from 'react-typed';
 
 import AuthContext from '../../context/auth/authContext';
 import AlertContext from '../../context/alert/alertContext';
@@ -49,7 +48,7 @@ const SignIn = props => {
   const demoLogin = e => {
     if (email === '' && password === '') {
       setUser({
-        email: 'vuthy1@gmail.com',
+        email: 'demo@gmail.com',
         password: '123123'
       });
     }
@@ -101,7 +100,7 @@ const SignIn = props => {
               type='submit'
               onClick={demoLogin}
               className='ui blue fluid button'>
-              Login As Demo User
+              LOGIN AS DEMO USER
             </button>
           </div>
         </form>

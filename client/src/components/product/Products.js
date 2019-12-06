@@ -12,7 +12,7 @@ const Products = () => {
   useEffect(() => {
     getProducts();
     //eslint-disable-next-line
-  }, []);
+  }, [products]);
 
   if (products !== null && products.length === 0 && !loading) {
     return (
@@ -27,7 +27,7 @@ const Products = () => {
   return (
     <div className='ui container' style={{ marginTop: '2rem' }}>
       <h1 className='header'>Featured Deals</h1>
-      {products !== null && !loading ? (
+      {products !== null && products.length !== 0 && !loading ? (
         <div className='ui centered grid segment'>
           {filtered !== null
             ? filtered.map(product => (

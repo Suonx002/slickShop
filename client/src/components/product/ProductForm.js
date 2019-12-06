@@ -69,6 +69,9 @@ const ProductForm = props => {
       discountPrice !== ''
     ) {
       if (current === null) {
+        //replace https://www. to nothing
+        website.replace(/[https://www.]/gi, '');
+
         addProduct(product);
         props.history.push('/');
       } else {
